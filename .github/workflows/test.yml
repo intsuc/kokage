@@ -2,12 +2,12 @@ name: Test
 
 on:
   push:
-    branches: [main]
+    branches: []
     paths:
       - "kokage/**"
       - "test/**"
   pull_request:
-    branches: [main]
+    branches: []
     paths:
       - "kokage/**"
       - "test/**"
