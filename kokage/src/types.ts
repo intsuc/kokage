@@ -19,7 +19,22 @@ function stub(): never {
   throw new Error("This function must not be called at runtime.");
 }
 
+// https://www.w3.org/TR/WGSL/#bool-builtin
 // @const @must_use
-export function u32(e: Scaler): u32 {
-  stub();
-}
+export function bool<T extends Scaler>(e: T): bool { stub(); }
+
+// https://www.w3.org/TR/WGSL/#f16-builtin
+// @const @must_use
+export function f16<T extends Scaler>(e: T): f16 { stub(); }
+
+// https://www.w3.org/TR/WGSL/#f32-builtin
+// @const @must_use
+export function f32<T extends Scaler>(e: T): f32 { stub(); }
+
+// https://www.w3.org/TR/WGSL/#i32-builtin
+// @const @must_use
+export function i32<T extends Scaler>(e: T): i32 { stub(); }
+
+// https://www.w3.org/TR/WGSL/#u32-builtin
+// @const @must_use
+export function u32<T extends Scaler>(e: T): u32 { stub(); }
