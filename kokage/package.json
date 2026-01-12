@@ -21,7 +21,11 @@
     "watch:rolldown": "rolldown --watch -c"
   },
   "devDependencies": {
+    "@webgpu/types": "^0.1.68",
     "rolldown": "1.0.0-beta.59",
     "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0"
   }
 }

@@ -4,8 +4,6 @@ import * as kokage from "kokage";
 test("webgpu supported", async ({ page }) => {
   await page.goto("/");
   const result = await page.evaluate(async () => {
-    console.log(kokage.kokage());
-
     const adapter = await navigator.gpu.requestAdapter();
     const device = await adapter.requestDevice();
     const encoder = device.createCommandEncoder();

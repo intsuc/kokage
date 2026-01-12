@@ -29,7 +29,14 @@ importers:
         version: 8.0.0-beta.7(@types/node@25.0.6)
 
   kokage:
+    dependencies:
+      acorn:
+        specifier: ^8.15.0
+        version: 8.15.0
     devDependencies:
+      '@webgpu/types':
+        specifier: ^0.1.68
+        version: 0.1.68
       rolldown:
         specifier: 1.0.0-beta.59
         version: 1.0.0-beta.59
@@ -250,6 +257,11 @@ packages:
 
   '@webgpu/types@0.1.68':
     resolution: {integrity: sha512-3ab1B59Ojb6RwjOspYLsTpCzbNB3ZaamIAxBMmvnNkiDoLTZUOBXZ9p5nAYVEkQlDdf6qAZWi1pqj9+ypiqznA==}
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
 
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
@@ -587,6 +599,8 @@ snapshots:
       undici-types: 7.16.0
 
   '@webgpu/types@0.1.68': {}
+
+  acorn@8.15.0: {}
 
   detect-libc@2.1.2: {}
 
