@@ -1,0 +1,4 @@
+packages:
+  - "kokage"
+  - "example"
+  - "test"

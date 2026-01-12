@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "/"
+      - "/example"
+      - "/kokage"
+      - "/test"
+    schedule:
+      interval: "daily"

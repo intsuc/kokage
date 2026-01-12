@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.23.0",
+    "oxlint": "^1.38.0"
+  }
+}

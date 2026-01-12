@@ -1,0 +1,27 @@
+{
+  "name": "kokage",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "pnpm run \"/^build:.*/\"",
+    "build:tsc": "tsc",
+    "build:rolldown": "rolldown -c",
+    "watch": "pnpm run \"/^watch:.*/\"",
+    "watch:tsc": "tsc --watch",
+    "watch:rolldown": "rolldown --watch -c"
+  },
+  "devDependencies": {
+    "rolldown": "1.0.0-beta.59",
+    "typescript": "~5.9.3"
+  }
+}
