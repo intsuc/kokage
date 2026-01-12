@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "pretest": "playwright install --with-deps chromium && cd ../kokage && pnpm build",
+    "pretest": "playwright install --with-deps --no-shell chromium && cd ../kokage && pnpm build",
     "test": "playwright test"
   },
   "dependencies": {
