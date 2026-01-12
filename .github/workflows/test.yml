@@ -1,16 +1,6 @@
 name: Test
 
 on:
-  push:
-    branches: []
-    paths:
-      - "kokage/**"
-      - "test/**"
-  pull_request:
-    branches: []
-    paths:
-      - "kokage/**"
-      - "test/**"
   workflow_dispatch:
 
 jobs:
