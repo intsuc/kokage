@@ -12,20 +12,21 @@ export function compute<
 ): (...args: Parameters<Fn>) => Promise<ReturnType<Fn>> {
   const expression = parseFunction(fn);
   const wgsl = emitWgslFunction(expression);
-  console.debug(wgsl);
-
+  const code = `
+${wgsl}
+@group(0) @binding(0) var<storage, read> input : array<u32>;
+@group(0) @binding(1) var<storage, read_write> output : array<u32>;
+@compute @workgroup_size(1)
+fn compute_main(@builtin(global_invocation_id) gid : vec3<u32>) {
+  output[gid.x] = main(input[gid.x]);
+}
+`;
+  console.debug(code);
   const pipeline = device.createComputePipeline({
     layout: "auto",
     compute: {
       module: device.createShaderModule({
-        code: `
-          @group(0) @binding(0) var<storage, read> input : array<u32>;
-          @group(0) @binding(1) var<storage, read_write> output : array<u32>;
-          @compute @workgroup_size(1)
-          fn main(@builtin(global_invocation_id) gid : vec3<u32>) {
-            output[gid.x] = input[gid.x] + 1;
-          }
-        `,
+        code,
       }),
     },
   });

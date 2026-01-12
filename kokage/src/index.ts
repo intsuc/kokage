@@ -1,3 +1,3 @@
-export type * from "./types";
+export * from "./types";
 export * from "./compute";
 export * from "./wgsl";
