@@ -49,6 +49,12 @@ importers:
       '@types/node':
         specifier: ^25.0.6
         version: 25.0.6
+      '@webgpu/types':
+        specifier: ^0.1.68
+        version: 0.1.68
+      vite:
+        specifier: 8.0.0-beta.7
+        version: 8.0.0-beta.7(@types/node@25.0.6)
 
 packages:
 
@@ -241,6 +247,9 @@ packages:
 
   '@types/node@25.0.6':
     resolution: {integrity: sha512-NNu0sjyNxpoiW3YuVFfNz7mxSQ+S4X2G28uqg2s+CzoqoQjLPsWSbsFFyztIAqt2vb8kfEAsJNepMGPTxFDx3Q==}
+
+  '@webgpu/types@0.1.68':
+    resolution: {integrity: sha512-3ab1B59Ojb6RwjOspYLsTpCzbNB3ZaamIAxBMmvnNkiDoLTZUOBXZ9p5nAYVEkQlDdf6qAZWi1pqj9+ypiqznA==}
 
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
@@ -576,6 +585,8 @@ snapshots:
   '@types/node@25.0.6':
     dependencies:
       undici-types: 7.16.0
+
+  '@webgpu/types@0.1.68': {}
 
   detect-libc@2.1.2: {}
 

@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "vite --port 3000 --strictPort",
     "pretest": "playwright install --with-deps --no-shell chromium && cd ../kokage && pnpm build",
     "test": "playwright test"
   },
@@ -12,6 +13,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.6"
+    "@types/node": "^25.0.6",
+    "@webgpu/types": "^0.1.68",
+    "vite": "8.0.0-beta.7"
   }
 }

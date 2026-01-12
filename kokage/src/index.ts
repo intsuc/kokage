@@ -1,3 +1,3 @@
-const kokage = "kokage";
+const kokage = () => "kokage";
 
 export { kokage };

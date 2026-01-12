@@ -1,4 +1,15 @@
 {
-  "compilerOptions": {},
-  "include": ["playwright.config.ts", "tests"]
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": [
+      "node",
+      "@webgpu/types"
+    ]
+  },
+  "include": [
+    "playwright.config.ts",
+    "tests"
+  ]
 }
