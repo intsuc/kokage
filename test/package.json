@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.6",
+    "@types/node": "^25.0.7",
     "@webgpu/types": "^0.1.68",
     "vite": "8.0.0-beta.7"
   }
